@@ -7813,7 +7813,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="----SETUP----">--- SETUP ---<a class="anchor-link" href="#----SETUP----">¶</a></h2>
+<h2 id="SETUP">SETUP<a class="anchor-link" href="#SETUP">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7822,7 +7822,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7835,7 +7835,7 @@ a.anchor-link {
 
 <span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = 'retina'
 
-<span class="c1"># Identidade Visual CX Trade</span>
+<span class="c1"># Identidade Visual</span>
 <span class="n">CX_NAVY</span>  <span class="o">=</span> <span class="s2">"#003366"</span>
 <span class="n">CX_BLUE</span>  <span class="o">=</span> <span class="s2">"#0066cc"</span>
 <span class="n">CX_LIGHT</span> <span class="o">=</span> <span class="s2">"#4da6ff"</span>
@@ -8116,7 +8116,7 @@ a.anchor-link {
     <span class="o">.</span><span class="n">reset_index</span><span class="p">())</span>
 
 <span class="c1"># Pontuação RFM (1 a 4 — quartis)</span>
-<span class="c1"># Recência: menor = melhor (invertido)</span>
+<span class="c1"># Recência: menor = melhor</span>
 <span class="n">rfm</span><span class="p">[</span><span class="s1">'R'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">'Recencia'</span><span class="p">],</span>   <span class="n">q</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="n">rfm</span><span class="p">[</span><span class="s1">'F'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">'Frequencia'</span><span class="p">]</span><span class="o">.</span><span class="n">rank</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">'first'</span><span class="p">),</span> <span class="n">q</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 <span class="n">rfm</span><span class="p">[</span><span class="s1">'M'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">qcut</span><span class="p">(</span><span class="n">rfm</span><span class="p">[</span><span class="s1">'Monetario'</span><span class="p">],</span>  <span class="n">q</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
@@ -8279,7 +8279,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="----VISUALIZA%C3%87%C3%83O-RFM----">--- VISUALIZAÇÃO RFM ---<a class="anchor-link" href="#----VISUALIZA%C3%87%C3%83O-RFM----">¶</a></h2>
+<h2 id="VISUALIZA%C3%87%C3%83O-RFM">VISUALIZAÇÃO RFM<a class="anchor-link" href="#VISUALIZA%C3%87%C3%83O-RFM">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8534,7 +8534,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="----VISUALIZA%C3%87%C3%83O-CATEGORIAS----">--- VISUALIZAÇÃO CATEGORIAS ---<a class="anchor-link" href="#----VISUALIZA%C3%87%C3%83O-CATEGORIAS----">¶</a></h2>
+<h2 id="VISUALIZA%C3%87%C3%83O-CATEGORIAS">VISUALIZAÇÃO CATEGORIAS<a class="anchor-link" href="#VISUALIZA%C3%87%C3%83O-CATEGORIAS">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8771,12 +8771,10 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># ============================================================</span>
-<span class="c1"># 5. HEATMAP DE CORRELAÇÕES LOGÍSTICAS</span>
-<span class="c1"># ============================================================</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># HEATMAP </span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--- 🔗 CORRELAÇÕES: LOGÍSTICA × SATISFAÇÃO ---"</span><span class="p">)</span>
 
@@ -8847,7 +8845,113 @@ Name: count, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="6.-CONCLUS%C3%95ES-DO-NOTEBOOK-02">6. CONCLUSÕES DO NOTEBOOK 02<a class="anchor-link" href="#6.-CONCLUS%C3%95ES-DO-NOTEBOOK-02">¶</a></h1>
+<h1 id="6.-%F0%9F%93%8A-Conclus%C3%B5es">6. 📊 Conclusões<a class="anchor-link" href="#6.-%F0%9F%93%8A-Conclus%C3%B5es">¶</a></h1><p><strong>Segmentação RFM | Categorias | Coorte | Correlações</strong></p>
+<hr/>
+<h2 id="%F0%9F%A7%A9-Segmenta%C3%A7%C3%A3o-RFM-(93.358-clientes)">🧩 Segmentação RFM (93.358 clientes)<a class="anchor-link" href="#%F0%9F%A7%A9-Segmenta%C3%A7%C3%A3o-RFM-(93.358-clientes)">¶</a></h2><table>
+<thead>
+<tr>
+<th>Segmento</th>
+<th>Clientes</th>
+<th>%</th>
+<th>Insight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Campeões</td>
+<td>23.491</td>
+<td>25,1%</td>
+<td>Maior ticket (R$147)</td>
+</tr>
+<tr>
+<td>Clientes Recentes</td>
+<td>23.356</td>
+<td>25,0%</td>
+<td>Compraram recentemente</td>
+</tr>
+<tr>
+<td>Em Risco</td>
+<td>23.188</td>
+<td>24,8%</td>
+<td>Compram, mas podem churnar</td>
+</tr>
+<tr>
+<td>Potencial</td>
+<td>17.423</td>
+<td>18,6%</td>
+<td>Precisam de estímulo</td>
+</tr>
+<tr>
+<td>Perdidos</td>
+<td>5.900</td>
+<td>6,3%</td>
+<td>Difíceis de recuperar</td>
+</tr>
+</tbody>
+</table>
+<p>📌 <strong>Insight:</strong><br/>
+Quase <strong>50% da base está em risco ou perdida</strong> → necessidade urgente de estratégias de retenção e fidelização.</p>
+<hr/>
+<h2 id="%F0%9F%93%A6-An%C3%A1lise-de-Categorias-(Top-10)">📦 Análise de Categorias (Top 10)<a class="anchor-link" href="#%F0%9F%93%A6-An%C3%A1lise-de-Categorias-(Top-10)">¶</a></h2><ul>
+<li><code>bed_bath_table</code>: maior volume (9.167 pedidos) | review 4.01★</li>
+<li><code>health_beauty</code>: maior satisfação (4.24★)</li>
+<li><code>toys</code>: melhor avaliação geral (4.24★)</li>
+<li>Todas as top 10 categorias possuem <strong>review ≥ 4.0★</strong></li>
+<li><code>auto</code> e <code>furniture_decor</code>: fretes mais altos (~R$21)</li>
+</ul>
+<p>📌 <strong>Insight:</strong><br/>
+As categorias principais apresentam <strong>operação saudável e boa percepção do cliente</strong>, sem riscos críticos de satisfação.</p>
+<hr/>
+<h2 id="%F0%9F%94%84-An%C3%A1lise-de-Coorte-(Reten%C3%A7%C3%A3o)">🔄 Análise de Coorte (Retenção)<a class="anchor-link" href="#%F0%9F%94%84-An%C3%A1lise-de-Coorte-(Reten%C3%A7%C3%A3o)">¶</a></h2><ul>
+<li>Retenção cai para <strong>0–1% já no mês seguinte</strong></li>
+<li>Exceção: coorte de Dez/2016 (~1% no período seguinte)</li>
+</ul>
+<p>📌 <strong>Insight:</strong><br/>
+O comportamento predominante é de <strong>compra única</strong> →<br/>
+<strong>fidelização é o maior gap estratégico do negócio</strong></p>
+<hr/>
+<h2 id="%F0%9F%94%97-Correla%C3%A7%C3%B5es:-Log%C3%ADstica-%C3%97-Satisfa%C3%A7%C3%A3o">🔗 Correlações: Logística × Satisfação<a class="anchor-link" href="#%F0%9F%94%97-Correla%C3%A7%C3%B5es:-Log%C3%ADstica-%C3%97-Satisfa%C3%A7%C3%A3o">¶</a></h2><table>
+<thead>
+<tr>
+<th>Variável</th>
+<th>Correlação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead Time × Satisfação</td>
+<td>-0.33</td>
+</tr>
+<tr>
+<td>Atraso × Satisfação</td>
+<td>-0.27</td>
+</tr>
+<tr>
+<td>Frete × Satisfação</td>
+<td>-0.03</td>
+</tr>
+<tr>
+<td>Preço × Satisfação</td>
+<td>-0.03</td>
+</tr>
+</tbody>
+</table>
+<p>📌 <strong>Insight:</strong></p>
+<ul>
+<li>Tempo de entrega é o principal driver de satisfação</li>
+<li>Preço e frete têm impacto praticamente irrelevante</li>
+</ul>
+<p>👉 <strong>Conclusão estratégica:</strong><br/>
+Investir em <strong>logística</strong> gera mais retorno do que reduzir preço.</p>
+<hr/>
+<h2 id="%F0%9F%8E%AF-Conclus%C3%A3o-Geral">🎯 Conclusão Geral<a class="anchor-link" href="#%F0%9F%8E%AF-Conclus%C3%A3o-Geral">¶</a></h2><ul>
+<li>Forte presença de churn → necessidade de retenção</li>
+<li>Operação das principais categorias é consistente</li>
+<li>Baixíssima retenção → problema estrutural do modelo</li>
+<li>Logística é o principal fator de experiência do cliente</li>
+</ul>
+<p>➡️ <strong>Prioridade estratégica:</strong><br/>
+Foco em <strong>retenção + eficiência logística</strong></p>
 </div>
 </div>
 </div>

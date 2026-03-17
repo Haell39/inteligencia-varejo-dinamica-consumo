@@ -7802,7 +7802,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Projeto:-Intelig%C3%AAncia-de-Varejo---CX-Trade">Projeto: Inteligência de Varejo - CX Trade<a class="anchor-link" href="#Projeto:-Intelig%C3%AAncia-de-Varejo---CX-Trade">¶</a></h1><h3 id="ML:-Classifica%C3%A7%C3%A3o-(Ruptura)-+-Regress%C3%A3o-(Review-Score)">ML: Classificação (Ruptura) + Regressão (Review Score)<a class="anchor-link" href="#ML:-Classifica%C3%A7%C3%A3o-(Ruptura)-+-Regress%C3%A3o-(Review-Score)">¶</a></h3>
+<h1 id="ML:-Classifica%C3%A7%C3%A3o-(Ruptura)-+-Regress%C3%A3o-(Review-Score)">ML: Classificação (Ruptura) + Regressão (Review Score)<a class="anchor-link" href="#ML:-Classifica%C3%A7%C3%A3o-(Ruptura)-+-Regress%C3%A3o-(Review-Score)">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7813,7 +7813,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="----SETUP----">--- SETUP ---<a class="anchor-link" href="#----SETUP----">¶</a></h1>
+<h2 id="SETUP">SETUP<a class="anchor-link" href="#SETUP">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9353,7 +9353,61 @@ Modelo útil para identificar risco logístico e apoiar decisão
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="4.-CONCLUS%C3%95ES-DO-NOTEBOOK-03">4. CONCLUSÕES DO NOTEBOOK 03<a class="anchor-link" href="#4.-CONCLUS%C3%95ES-DO-NOTEBOOK-03">¶</a></h1>
+<h1 id="4.-%F0%9F%A4%96-Resultados-dos-Modelos">4. 🤖 Resultados dos Modelos<a class="anchor-link" href="#4.-%F0%9F%A4%96-Resultados-dos-Modelos">¶</a></h1><p><strong>Classificação (Ruptura) + Regressão (Satisfação)</strong></p>
+<hr/>
+<h2 id="%F0%9F%9A%A8-Modelo-1:-Classifica%C3%A7%C3%A3o-(Ruptura-Log%C3%ADstica)">🚨 Modelo 1: Classificação (Ruptura Logística)<a class="anchor-link" href="#%F0%9F%9A%A8-Modelo-1:-Classifica%C3%A7%C3%A3o-(Ruptura-Log%C3%ADstica)">¶</a></h2><ul>
+<li><strong>Acurácia:</strong> 96.68%</li>
+<li><strong>F1-Score (CV 5x):</strong> 0.715 ± 0.011</li>
+<li><strong>Precisão (Atrasado):</strong> 82%</li>
+<li><strong>Recall (Atrasado):</strong> 64%</li>
+</ul>
+<p>📌 <strong>Insights:</strong></p>
+<ul>
+<li>Principal variável: <strong>Lead Time (83,1%)</strong></li>
+<li>O modelo identifica <strong>64% dos atrasos reais</strong></li>
+<li>Há <strong>36% de falsos negativos</strong>, esperado devido ao desbalanceamento (apenas 6,7% atrasam)</li>
+</ul>
+<p>👉 <strong>Veredicto:</strong><br>
+Modelo útil como <strong>sistema de alerta precoce de atrasos</strong></br></p>
+<hr/>
+<h2 id="%E2%AD%90-Modelo-2:-Regress%C3%A3o-(Satisfa%C3%A7%C3%A3o-do-Cliente)">⭐ Modelo 2: Regressão (Satisfação do Cliente)<a class="anchor-link" href="#%E2%AD%90-Modelo-2:-Regress%C3%A3o-(Satisfa%C3%A7%C3%A3o-do-Cliente)">¶</a></h2><ul>
+<li><strong>MAE:</strong> 0.878</li>
+<li><strong>RMSE:</strong> 1.146</li>
+<li><strong>R²:</strong> 0.220</li>
+</ul>
+<p><strong>Baseline (média 4.16★):</strong></p>
+<ul>
+<li>Erro: 1.008</li>
+</ul>
+<p><strong>Modelo:</strong></p>
+<ul>
+<li>Erro: 0.878 (<strong>+13% melhor</strong>)</li>
+</ul>
+<p>📌 <strong>Insights:</strong></p>
+<ul>
+<li>Principal variável: <strong>Atraso na entrega</strong></li>
+<li>Modelo explica <strong>22% da variação da satisfação</strong></li>
+<li><strong>78% depende de fatores não modelados</strong> (produto, expectativa, etc.)</li>
+</ul>
+<p>👉 <strong>Veredicto:</strong><br>
+Modelo útil para <strong>identificar risco de insatisfação</strong>, mas não captura toda a complexidade do cliente</br></p>
+<hr/>
+<h2 id="%F0%9F%8E%AF-Direcionamento-Estrat%C3%A9gico">🎯 Direcionamento Estratégico<a class="anchor-link" href="#%F0%9F%8E%AF-Direcionamento-Estrat%C3%A9gico">¶</a></h2><ol>
+<li><p><strong>Lead Time é o principal driver</strong> de atrasos e satisfação<br>
+→ Prioridade: otimizar logística (especialmente fora do Sudeste)</br></p>
+</li>
+<li><p>O modelo de classificação é <strong>conservador por design</strong><br>
+→ Evita excesso de falsos alarmes</br></p>
+</li>
+<li><p><strong>Próximos passos:</strong></p>
+<ul>
+<li>Incluir dados de produto (qualidade, categoria)</li>
+<li>Testar modelos mais robustos (XGBoost, LightGBM)</li>
+<li>Balancear classes (SMOTE)</li>
+<li>Deploy via API (FastAPI) para uso em produção</li>
+</ul>
+</li>
+</ol>
 </div>
 </div>
 </div>

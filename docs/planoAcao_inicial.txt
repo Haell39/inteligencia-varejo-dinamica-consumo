@@ -1,0 +1,21 @@
+1. O Plano de "Ataque" aos Dados (O que pesquisar)
+Para impressionar, você não vai apenas olhar o faturamento. Você vai analisar a eficiência da operação brasileira.
+
+No Olist (Kaggle): Procure a relação entre o delivery_performance (tempo de entrega real vs. estimado) e o review_score.
+
+Conexão CX Trade: Eles gerenciam promotores no PDV. Se o produto não chega (logística falha), o promotor não tem o que repor. Isso é Ruptura.
+
+No Gov.br (IBGE/SIDRA): Baixe a série histórica do IPCA (Inflação) de 2016-2018 (período do dataset Olist) para os grupos de "Alimentação e Bebidas" e "Artigos de Residência".
+
+O Cruzamento: Analise se, nos meses em que o IPCA subiu, houve uma queda no volume de vendas em categorias específicas dentro do Olist. Isso mostra que você entende de Elasticidade de Preço.
+
+2. Análises "UAU" para levar na ponta da língua
+Prepare estas três conclusões baseadas no seu estudo:
+
+O "Custo Pernambuco": Filtre as vendas de Pernambuco no Olist. Calcule o frete médio e o tempo de entrega para o nosso estado comparado a São Paulo.
+
+Insight: "Notei que o lead time para o Nordeste é X% maior, o que exige uma estratégia de estoque mais agressiva para evitar a ruptura no PDV local".
+
+Sazonalidade vs. Inflação: Mostre como o comportamento de compra mudou em datas como a Black Friday brasileira sob diferentes cenários de inflação.
+
+Identificação de Oportunidade: "Identifiquei que a categoria X tem baixa sensibilidade à inflação, sendo ideal para campanhas de fidelização no PDV".

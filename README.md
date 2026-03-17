@@ -1,0 +1,2 @@
+# inteligencia-varejo-dinamica-consumo
+

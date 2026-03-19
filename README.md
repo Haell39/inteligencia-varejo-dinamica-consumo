@@ -14,16 +14,16 @@ Entender o impacto de inflação, logística e comportamento do cliente no desem
 
 - 🚚 **Logística > Inflação**  
   Lead Time impacta mais a satisfação (-0.33) do que o IPCA  
-  → Inflação não explica vendas no curto prazo :contentReference[oaicite:0]{index=0}
+  → Inflação não explica vendas no curto prazo 
 
 - 📍 **Custo Nordeste**  
-  PE: +116% Lead Time | +107% frete vs SP :contentReference[oaicite:1]{index=1}
+  PE: +116% Lead Time | +107% frete vs SP 
 
 - ⭐ **Atraso reduz satisfação pela metade**  
-  4.29★ → 2.27★ (-47%) :contentReference[oaicite:2]{index=2}
+  4.29★ → 2.27★ (-47%) 
 
 - 👥 **Baixa retenção**  
-  ~0–1% após 1 mês | ~50% da base em risco :contentReference[oaicite:3]{index=3}
+  ~0–1% após 1 mês | ~50% da base em risco
 
 ---
 
